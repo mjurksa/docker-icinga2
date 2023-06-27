@@ -68,7 +68,7 @@ RUN apt-get update ;\
 		libboost{,-{context,coroutine,date-time,filesystem,iostreams,program-options,regex,system,test,thread}}1.74-dev \
 		libedit-dev libmariadb-dev libpq-dev libssl-dev make \
   		build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev \ 
-		python3;\
+		python3 python-setuptools;\
 	apt-get install --no-install-{recommends,suggests} -y ccache ;\
 	apt-get clean ;\
 	rm -vrf /var/lib/apt/lists/*
